@@ -147,7 +147,19 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-
+    $('#Now').click(function(){
+      // $(this)指當事者也就是$('#Now')
+      // console.log($(this));
+      // $(this).nextAll().css('background-color', 'lightblue');
+      // $(this).siblings().last().css('background-color', 'lightblue');
+      // jquery初始值=0 css初始值＝1
+      // $(this).siblings().eq(3).css('background-color', 'lightblue');
+      // $(this).parent().parent().parent().parent().css('background-color', 'lightblue');
+      // $(this).parent().siblings().has('p').css('background-color', 'lightblue');
+      // $(this).parent().parent().children().children().css('background-color', 'lightblue');
+      // $(this).parent().prev().find('li').eq(0).css('background-color', 'lightblue');
+      $(this).parent().siblings().last().children().eq(2).css('background-color', 'lightblue');
+    });
   </script>
 </body>
 
