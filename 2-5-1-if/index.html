@@ -10,13 +10,21 @@
 
 <body>
 
-	<div>我有 <span id="Money"></span> 元</div>
+	<div> <span id="Money"> </span> </div>
 
 	<div id="Todo"></div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
-
+		const money = 300;
+		$('#Money').text('我有' + money + '元');
+		if (money >= 100) {
+			$('#Todo').html('<h1>去吃麥當勞</h1>');
+		} else if (money <= 60) {
+			$('#Todo').text('喝西北風');
+		} else {
+			$('#Todo').text('只能吃美而美');
+		}
 	</script>
 </body>
 
