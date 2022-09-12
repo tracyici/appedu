@@ -11,6 +11,11 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
+		let num = 0;
+		setInterval(function() {
+			num++;
+			$('body').html('<h1>' + num + '</h1>');
+		}, 1000);
 
 	</script>
 </body>
